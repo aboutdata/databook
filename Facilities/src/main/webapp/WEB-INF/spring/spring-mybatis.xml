@@ -35,9 +35,4 @@
         <property name="configLocation" value="classpath:mybatis.xml"></property>
         <property name="dataSource" ref="dataSource" />
     </bean>
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!-- 自动扫描 mybatis的接口 -->
-        <property name="basePackage" value="com.anhao.domain.dao"></property>
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
-    </bean>
 </beans>

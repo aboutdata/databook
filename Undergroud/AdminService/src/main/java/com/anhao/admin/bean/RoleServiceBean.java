@@ -29,20 +29,20 @@ public class RoleServiceBean implements RoleService {
     public void get() {
         System.out.println("RoleServiceBean ..................");
 
-//        Role role = new Role();
-//
-//        String randomId = RandomStringUtils.randomNumeric(10);
-//
-//        logger.debug("randomId :{}", randomId);
-//        role.setId(randomId);
-//
-//        role.setCreateDate(new Date());
-//        role.setModifyDate(new Date());
-//        role.setIsSystem(Boolean.TRUE);
-//        role.setDescription("Description" + RandomStringUtils.randomNumeric(5));
-//        role.setName("iam insert role " + RandomStringUtils.randomNumeric(5));
-//        role.setValue("ROLE_ADMIN");
-//        roleMapper.create(role);
+        Role role = new Role();
+
+        String randomId = RandomStringUtils.randomNumeric(10);
+
+        logger.debug("randomId :{}", randomId);
+        role.setId(randomId);
+
+        role.setCreateDate(new Date());
+        role.setModifyDate(new Date());
+        role.setIsSystem(Boolean.TRUE);
+        role.setDescription("Description" + RandomStringUtils.randomNumeric(5));
+        role.setName("iam insert role " + RandomStringUtils.randomNumeric(5));
+        role.setValue("ROLE_ADMIN");
+        roleMapper.create(role);
     }
 
 }
