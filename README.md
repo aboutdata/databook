@@ -17,6 +17,6 @@
 * 5 输入http://localhost:8080/Market/admin/list.do 观察控制输出如下信息,则成功
 >
 ```
-id 1admin Admin{username=admin, password=21232f297a57a5a743894a0e4a801fc3, email=admin@shopxx.net, name=管理员, department=技术部, isEnabled=true, isLocked=false, loginFailureCount=0, lockedDate=Thu Jul 23 11:22:00 CST 2015, loginDate=Thu Aug 08 23:27:21 CST 2013, loginIp=null}
+id 1admin Admin{username=admin, password=21232f297a57a5a743894a0e4a801fc3, email=845885222@vip.qq.com, name=管理员, department=技术部, isEnabled=true, isLocked=false, loginFailureCount=0, lockedDate=Thu Jul 23 11:22:00 CST 2015, loginDate=Thu Aug 08 23:27:21 CST 2013, loginIp=null}
 $######################displayAdminList
 ```
