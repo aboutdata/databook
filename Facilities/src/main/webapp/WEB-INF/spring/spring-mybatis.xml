@@ -34,5 +34,11 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="configLocation" value="classpath:mybatis.xml"></property>
         <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations">
+            <list>
+                <!--** 代表的模块名称-->
+                <value>classpath*:com/anhao/**/domain/mapper/*.xml</value>
+            </list>
+        </property>       
     </bean>
 </beans>
