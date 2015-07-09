@@ -6,6 +6,7 @@
 package com.anhao.admin.api;
 
 import com.anhao.admin.model.Admin;
+import java.util.List;
 
 /**
  *
@@ -14,4 +15,8 @@ import com.anhao.admin.model.Admin;
 public interface AdminService {
 
     public void create(Admin admin);
+
+    public List<Admin> findAll();
+
+    public Admin findById(String id);
 }

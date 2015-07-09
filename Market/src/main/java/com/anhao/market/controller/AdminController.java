@@ -11,6 +11,7 @@ import com.anhao.admin.model.Admin;
 import com.anhao.config.ConfigService;
 import com.anhao.config.system.SystemConfig;
 import java.util.Date;
+import java.util.List;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -36,13 +37,17 @@ public class AdminController {
 
     @RequestMapping("list.do")
     public String displayAdminList(HttpServletRequest request) {
-        String result = configService.get();
-        roleService.get();
-        SystemConfig config = configService.getSystemConfig();
+//        String result = configService.get();
+//        roleService.get();
+//        SystemConfig config = configService.getSystemConfig();
+        List<Admin> lists = adminService.findAll();
 
-        System.out.println("config" + config.getDefaultPassword());
+        for (Admin admin : lists) {
+            System.out.println("id "+admin.getId()+"admin " + admin.toString());
+        }
+//        System.out.println("config" + config.getDefaultPassword());
         System.out.println("$######################displayAdminList");
-        System.out.println("$######################result" + result);
+//        System.out.println("$######################result" + result);
         return "list";
     }
 
@@ -59,7 +64,7 @@ public class AdminController {
         admin.setIsLocked(Boolean.FALSE);
         admin.setLockedDate(new Date());
         admin.setLoginDate(new Date());
-        admin.setLoginFailureCount(Integer.MIN_VALUE);
+        admin.setLoginFailureCount(0);
         admin.setLoginIp(randomId);
 
         admin.setModifyDate(new Date());
