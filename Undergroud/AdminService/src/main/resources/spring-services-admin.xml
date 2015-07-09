@@ -16,6 +16,11 @@
     <!-- 具体的实现bean -->
     <dubbo:service interface="com.anhao.admin.api.RoleService" ref="roleService" />
 	
+     <bean id="adminService" class="com.anhao.admin.bean.AdminServiceBean"/>
+    <!-- 具体的实现bean -->
+    <dubbo:service interface="com.anhao.admin.api.AdminService" ref="adminService" />
+    
+    
     <!--mybatis 改进功能-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 自动扫描 mybatis的接口 -->
