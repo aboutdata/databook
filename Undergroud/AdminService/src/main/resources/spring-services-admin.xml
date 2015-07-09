@@ -19,7 +19,7 @@
     <!--mybatis 改进功能-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 自动扫描 mybatis的接口 -->
-        <property name="basePackage" value="com.anhao.domain.dao"></property>
+        <property name="basePackage" value="com.anhao.admin.domain.dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
    
