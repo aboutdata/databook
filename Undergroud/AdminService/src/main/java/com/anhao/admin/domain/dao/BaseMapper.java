@@ -1,4 +1,4 @@
-package com.anhao.domain.dao;
+package com.anhao.admin.domain.dao;
 
 import java.io.Serializable;
 

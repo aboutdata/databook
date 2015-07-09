@@ -16,5 +16,8 @@
     <dubbo:reference id="configService"
                      interface="com.anhao.config.ConfigService" />
     <dubbo:reference id="roleService"
-                       interface="com.anhao.admin.api.RoleService" />
+                     interface="com.anhao.admin.api.RoleService" />
+    
+    <dubbo:reference id="adminService"
+                        interface="com.anhao.admin.api.AdminService" />
 </beans>
