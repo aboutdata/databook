@@ -1,6 +1,6 @@
 package com.anhao.domain.dao;
 
-import com.anhao.domain.Role;
+import com.anhao.admin.domain.Role;
 import java.util.List;
 
 /**

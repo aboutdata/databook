@@ -6,7 +6,7 @@
 package com.anhao.admin.bean;
 
 import com.anhao.admin.api.RoleService;
-import com.anhao.domain.Role;
+import com.anhao.admin.domain.Role;
 import com.anhao.domain.dao.RoleMapper;
 import java.util.Date;
 import javax.annotation.Resource;

@@ -4,7 +4,7 @@
 <configuration>
     <typeAliases>  
         <!--给实体类起一个别名 user -->  
-        <typeAlias type="com.anhao.domain.Role" alias="Role" />  
+        <typeAlias type="com.anhao.admin.domain.Role" alias="Role" />  
     </typeAliases>  
     <mappers>
         <mapper resource="com/anhao/domain/mapper/RoleMapper.xml"/>

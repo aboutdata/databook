@@ -1,4 +1,6 @@
-package com.anhao.domain;
+package com.anhao.admin.domain;
+
+import com.anhao.common.entity.ABaseEntity;
 
 /**
  * ʵ���� - ��ɫ

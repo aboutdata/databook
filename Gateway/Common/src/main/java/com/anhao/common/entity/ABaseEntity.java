@@ -1,4 +1,4 @@
-package com.anhao.domain;
+package com.anhao.common.entity;
 
 import java.io.Serializable;
 import java.util.Date;
