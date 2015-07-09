@@ -10,7 +10,7 @@
 >项目运行
 * 1 先启动zookeeper 
 	如果是windows: 执行D:\Tools\zookeeper-3.4.6\bin  下的zkServer 即可
-	如果是linux 执行kServer.sh
+	<br />如果是linux 执行kServer.sh
 * 2 先创建数据 create database biz； 然后把facilities下webapp下的sql文件,导入biz库中，
 * 3 打包运行facilities项目 
 * 4 运行Market ，输入http://localhost:8080/Market/admin/create.do  插入一条数据到v_amdin表
