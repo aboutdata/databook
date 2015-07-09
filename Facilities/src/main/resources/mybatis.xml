@@ -7,8 +7,9 @@
         <typeAlias type="com.anhao.admin.domain.Role" alias="Role" />
         <typeAlias type="com.anhao.admin.model.Admin" alias="Admin" />
     </typeAliases>  
-    <mappers>
+    <!--在spring-mybatis中配置<value>classpath*:com/anao/**/domain/mapper/*.xml</value>-->
+    <!--mappers>
         <mapper resource="com/anhao/admin/domain/mapper/RoleMapper.xml"/>
         <mapper resource="com/anhao/admin/domain/mapper/AdminMapper.xml"/>
-    </mappers>
+    </mappers-->
 </configuration>
