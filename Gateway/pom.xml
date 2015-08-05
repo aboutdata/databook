@@ -27,41 +27,9 @@
         <module>product</module>
         <module>Consultation</module>
         <module>CMS</module>
+        <module>Model</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <build>  
-        <plugins><!-- 解决模块相互依赖,综合所有相互依赖代码统一编译 -->  
-            <plugin>  
-                <groupId>org.codehaus.mojo</groupId>  
-                <artifactId>build-helper-maven-plugin</artifactId>  
-                <executions>  
-                    <execution>  
-                        <id>add-source</id>  
-                        <phase>generate-sources</phase>  
-                        <goals>  
-                            <goal>add-source</goal>  
-                        </goals>  
-                        <configuration>  
-                            <sources>  
-                                  <module>Payment</module>
-        <module>Admin</module>
-        <module>Order</module>
-        <module>Area</module>
-        <module>Member</module>
-        <module>product</module>
-        <module>Consultation</module>
-        <module>CMS</module>
-                                <source>./Config/src/main/java</source>  
-                                <source>./Common/src/main/java</source>  
-                                <source>./Shipping/src/main/java</source>
-                                 
-                            </sources>  
-                        </configuration>  
-                    </execution>  
-                </executions>  
-            </plugin>  
-        </plugins>  
-    </build>
 </project>

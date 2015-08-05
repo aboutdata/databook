@@ -6,13 +6,14 @@
         <artifactId>Gateway</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.anhao.area</groupId>
-    <artifactId>Area</artifactId>
+    <groupId>com.anhao.model</groupId>
+    <artifactId>Model</artifactId>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+    
     <dependencies>
         <dependency>
             <groupId>com.anhao.common</groupId>
